@@ -1,0 +1,824 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "open_sansbold";
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sanslight";
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sansregular";
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sanssemibold";
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "open_sansextrabold";
+  src: url("../fonts/opensans-extrabold-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "open_sansextrabold";
+}
+p {
+  font-family: "open_sansregular";
+}
+body {
+  font-family: "open_sansregular";
+  background: #e5e5e5;
+}
+
+#top {
+  background-image: linear-gradient(
+      95.62deg,
+      rgba(0, 37, 141, 0.5),
+      rgba(65, 90, 158, 0.7)
+    ),
+    url(../images/spotlight.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+}
+header .left h1 a img {
+  width: 15%;
+  display: block;
+  margin-top: 28px;
+}
+header .right ul {
+  list-style: none;
+  display: flex;
+}
+header .menu-icon {
+  display: none;
+}
+header .menu-icon img {
+  width: 40px;
+  filter: invert(1);
+}
+header .right ul li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 70px;
+}
+header .right ul li a {
+  color: #d4d4d4;
+}
+header .right ul li a:hover {
+  color: #fff;
+}
+
+header .right ul li a.home:nth-child(1) {
+  color: #fff;
+}
+header .right ul li:last-child {
+  margin-right: 0;
+}
+header .right ul li a {
+  text-decoration: none;
+}
+header .left {
+  width: 50%;
+  display: block;
+}
+header .option {
+  display: none;
+}
+#spotlight {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+#spotlight .wrapper {
+  display: flex;
+  align-items: center;
+}
+#spotlight .left {
+  width: 50%;
+}
+#spotlight .left h1 {
+  font-size: 58px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 0;
+  font-family: "open_sansbold";
+}
+#spotlight .left p {
+  font-size: 25px;
+  color: #fff;
+  width: 100%;
+  margin: 50px 0 50px;
+}
+a.button {
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: rgb(240, 25, 25);
+  text-decoration: none;
+}
+#spotlight .right {
+  width: 40%;
+  position: relative;
+  top: 15%;
+  right: -10%;
+}
+.right img {
+  max-width: 170%;
+}
+#main {
+  display: flex;
+  align-items: center;
+  padding: 150px 85px;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+#main .left {
+  width: 40%;
+}
+#main .left img {
+  width: 140%;
+}
+#main .right {
+  width: 100%;
+}
+#main .right span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #e81631;
+  font-weight: bold;
+}
+#main .right h1 {
+  font-size: 30px;
+  font-weight: 700;
+  width: 314px;
+  margin-top: 30px;
+}
+#main .right p {
+  width: 70%;
+  font-size: 20px;
+  line-height: 1.8em;
+  color: #4f4f4f;
+  margin-top: 30px;
+}
+#services {
+  justify-content: center;
+  margin-top: -40px;
+  padding: 50px 4%;
+  background-color: #e5e5e5;
+}
+#services .top {
+  text-align: center;
+}
+#services .top span {
+  font-weight: bold;
+  color: #e81631;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+#services h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+#services .bottom {
+  display: flex;
+  margin-top: 90px;
+}
+#services .bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+#services .bottom ul a {
+  text-decoration: none;
+}
+#services .bottom ul li {
+  list-style: none;
+  width: 17%;
+  padding: 28px 20px 40px 24px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-left: 28px;
+  margin-bottom: 28px;
+  border: 3px solid #fff;
+}
+#services .bottom ul li:hover {
+  border: 3px solid #00258d;
+  border-radius: 20px;
+  box-shadow: rgba(28, 141, 255, 0.2) 0px 8px 24px;
+}
+#services .bottom ul li img {
+  border-radius: 12px;
+  border: 1px solid #cfcdcd;
+  padding: 14px;
+  margin-right: 0px;
+  margin-bottom: 38px;
+  background-color: #fff;
+}
+#services .bottom ul li h2 {
+  color: #00258d;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+#services .bottom ul li p {
+  color: #474747;
+  width: -14%;
+  margin-top: 25px;
+  line-height: 1.8em;
+}
+#explore {
+  padding: 15% 8% 4% 8%;
+}
+#explore .app .container {
+  background-image: linear-gradient(
+      89.88deg,
+      rgba(255, 53, 79, 0.6) 0.1%,
+      rgba(238, 23, 51, 0.85) 57.15%,
+      rgba(231, 11, 39, 0.8) 99.89%
+    ),
+    url(../images/banner.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  height: 530px;
+  display: flex;
+  align-items: center;
+}
+#explore .app .text {
+  padding: 0 0 0 9%;
+  width: 40%;
+}
+#explore .app .text h1 {
+  font-size: 46px;
+  margin-bottom: 34px;
+  color: #fff;
+}
+#explore .app .text p {
+  font-size: 18px;
+  margin-bottom: 36px;
+  color: #fff;
+  line-height: 1.8em;
+}
+#explore .app .text .button {
+  display: flex;
+}
+#explore .app .text .button .bta {
+  margin-right: 26px;
+}
+#explore .app .image {
+  width: 50%;
+}
+#explore .app .image img {
+  max-width: 100%;
+  display: block;
+}
+footer {
+  background-image: url(../images/Rectangle\ 99.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 18%;
+  text-align: center;
+  padding: 5% 3% 1%;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer .logo a {
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #000;
+}
+footer .location {
+  margin-bottom: 25px;
+}
+footer .location a {
+  text-decoration: none;
+  color: #000;
+}
+footer .address ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .address ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+footer .address ul li a {
+  text-decoration: none;
+  display: flex;
+  color: #000;
+}
+footer .address ul span {
+  margin: 0 20px;
+}
+.social {
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+.social a {
+  margin-right: 25px;
+}
+.copy {
+  text-align: center;
+}
+.copy span {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(126, 124, 124);
+  padding-bottom: 20px;
+}
+.copy span small a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(126, 124, 124);
+  margin-top: 40px;
+}
+
+/* media-screen */
+
+@media all and (max-width: 1280px) {
+  #spotlight .right {
+    width: 60%;
+    top: 18%;
+  }
+
+  #spotlight .right img {
+    max-width: 150%;
+  }
+  #spotlight .right {
+    right: 7%;
+  }
+  #spotlight .left {
+    width: 100%;
+    margin-top: 80px;
+  }
+  #spotlight .left h1 {
+    font-size: 52px;
+  }
+  #spotlight .left p {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 980px) {
+  #spotlight .wrapper {
+    flex-direction: column;
+  }
+  #spotlight .right {
+    right: -2%;
+  }
+  #spotlight .left {
+    text-align: center;
+  }
+  #spotlight .left p {
+    font-size: 21px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+  #spotlight .right img {
+    width: 108%;
+  }
+  #spotlight .right {
+    top: 10%;
+  }
+  #main {
+    flex-direction: column;
+  }
+  #main .left {
+    width: 45%;
+  }
+  #main .right {
+    text-align: center;
+  }
+  #main .right h1 {
+    margin: 0 auto;
+  }
+  #main .right p {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #spotlight {
+    height: 100vh;
+  }
+  #spotlight .right {
+    width: 50%;
+  }
+  #main .right p {
+    font-size: 16px;
+  }
+  #services .bottom ul li {
+    width: 22%;
+  }
+  #explore .app .container {
+    height: 380px;
+  }
+  #explore .app .text h1 {
+    font-size: 38px;
+  }
+  #explore .app .text p {
+    font-size: 16px;
+  }
+  #explore .app .text .button {
+    width: 20px;
+  }
+  #explore .app .text .button .bta img {
+    width: 150px;
+  }
+}
+@media all and (max-width: 768px) {
+  #spotlight .left h1 {
+    font-size: 46px;
+  }
+  #spotlight .left p {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 90%;
+  }
+  header .menu-icon {
+    display: block;
+    z-index: 44;
+  }
+  header .option {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: -100%;
+    height: 200px;
+    width: 100%;
+    background-color: #c7bbff;
+    padding: 15% 5% 5% 5%;
+    text-align: center;
+    z-index: 4;
+    transition: all 0.5s ease-in-out;
+  }
+  .active header .option {
+    top: 0;
+  }
+  header .option ul {
+    list-style: none;
+  }
+  header .option ul li {
+    margin-bottom: 30px;
+  }
+  header .option ul li a {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  header .right {
+    display: none;
+  }
+  #main .right p {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #spotlight .right {
+    width: 58%;
+  }
+  #services .bottom ul li {
+    width: 28%;
+  }
+  #explore .app .text h1 {
+    font-size: 30px;
+  }
+  #explore .app .container {
+    height: 330px;
+  }
+  #explore .app .text .button .bta img {
+    width: 130px;
+  }
+}
+@media all and (max-width: 640px) {
+  #spotlight .left h1 {
+    font-size: 48px;
+  }
+  #spotlight .left p {
+    font-size: 20px;
+    width: 80%;
+  }
+  a.button {
+    font-size: 17px;
+    padding: 12px 23px;
+  }
+  #spotlight .right {
+    top: 120px;
+    width: 70%;
+  }
+  #main {
+    flex-direction: column;
+  }
+  #main .right span {
+    font-size: 18px;
+  }
+  #main .right h1 {
+    font-size: 26px;
+  }
+  #main .right p {
+    font-size: 14px;
+  }
+  #main .left img {
+    width: 80%;
+  }
+  #main .left {
+    width: 120%;
+    margin: 0 auto;
+  }
+  #services .bottom ul li p {
+    font-size: 14px;
+  }
+  #services .bottom ul li {
+    width: 30%;
+  }
+  #services .top span {
+    font-size: 18px;
+  }
+  #services h1 {
+    font-size: 26px;
+  }
+  #explore .app .text h1 {
+    font-size: 25px;
+  }
+  #explore .app .container {
+    height: 290px;
+  }
+  #explore .app .text h1 {
+    margin-bottom: 24px;
+  }
+  #explore .app .text .button .bta img {
+    width: 104px;
+  }
+  .logo .uk.img {
+    width: 15%;
+  }
+  footer .address ul li a {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 480px) {
+  header .left h1 a img {
+    width: 30%;
+  }
+  #spotlight .left h1 {
+    font-size: 37px;
+  }
+  #spotlight .left p {
+    font-size: 18px;
+  }
+  a.button {
+    font-size: 15px;
+  }
+  #spotlight {
+    height: calc(100vh - 100px);
+  }
+  #spotlight .right {
+    display: none;
+  }
+  #spotlight .right img {
+    width: 150%;
+  }
+  #main .right h1 {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #main .right p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #services h1 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  #services .bottom ul li {
+    width: 40%;
+  }
+  #explore .app .text {
+    width: 100%;
+  }
+  #explore .app .container {
+    flex-direction: column-reverse;
+    height: 400px;
+    padding-bottom: 10%;
+    padding-left: 20px;
+  }
+  #explore .app .text h1 {
+    width: 90%;
+  }
+  #explore .app .image img {
+    width: 105%;
+  }
+  #explore .app .text .button .bta img {
+    width: 145px;
+  }
+  #explore .app .text p {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  footer .address ul {
+    flex-direction: column;
+  }
+  footer .address ul span {
+    display: none;
+  }
+  footer .address ul li {
+    margin-bottom: 20px;
+  }
+  footer .address ul li a {
+    font-size: 14px;
+  }
+  footer .logo img {
+    width: 70px;
+  }
+  footer .location a {
+    font-size: 14px;
+  }
+  .copy span {
+    line-height: 1.7em;
+  }
+}
+@media all and (max-width: 360px) {
+  header .left h1 a img {
+    width: 35%;
+  }
+  header .menu-icon img {
+    width: 35px;
+  }
+  #spotlight .left h1 {
+    font-size: 25px;
+  }
+  #spotlight .left p {
+    font-size: 16px;
+  }
+  a.button {
+    font-size: 14px;
+    padding: 10px 23px;
+  }
+  #spotlight .right {
+    width: 70%;
+  }
+  #spotlight .right img {
+    width: 140%;
+  }
+  #spotlight .right {
+    width: 78%;
+    right: 12%;
+  }
+  #main .right h1 {
+    width: 105%;
+  }
+  #main {
+    padding: 150px 30px;
+  }
+  #main .left img {
+    margin: 0 auto;
+  }
+  #services .bottom ul li {
+    width: 50%;
+  }
+  #services h1 {
+    font-size: 22px;
+    width: 70%;
+  }
+  #services .bottom ul li {
+    margin-left: 0;
+  }
+  #explore .app .text .button .bta img {
+    width: 110px;
+  }
+  #main .left {
+    width: 100%;
+  }
+  #explore .app .text p {
+    font-size: 14px;
+  }
+  #explore .app .container {
+    height: 350px;
+  }
+  footer {
+    padding-top: 10%;
+  }
+}
+@media all and (max-width: 320px) {
+  #spotlight .left p {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  #spotlight .left h1 {
+    font-size: 24px;
+  }
+  #spotlight .right {
+    width: 128%;
+    right: 2%;
+  }
+  #spotlight .right img {
+    width: 100%;
+    display: block;
+  }
+  header .right {
+    display: none;
+  }
+  #main .left {
+    width: 110%;
+  }
+  #main .left img {
+    width: 76%;
+  }
+  header .menu-icon img {
+    width: 30px;
+  }
+  #main .right h1 {
+    font-size: 22px;
+  }
+  #services h1 {
+    width: 90%;
+  }
+  #services .bottom ul li {
+    width: 60%;
+  }
+  #explore .app .text h1 {
+    width: 90%;
+    font-size: 20px;
+  }
+  #explore .app .text p {
+    font-size: 12px;
+  }
+  #explore .app .text .button .bta img {
+    width: 95px;
+  }
+  #explore .app .container {
+    height: 320px;
+  }
+  footer {
+    padding-top: 15%;
+  }
+  footer .logo img {
+    width: 55px;
+  }
+  footer .location a {
+    font-size: 11px;
+  }
+  footer .address ul li a {
+    font-size: 11px;
+  }
+  footer .social img {
+    width: 20px;
+  }
+  footer .social a :last-child {
+    margin-right: 0;
+  }
+  .copy span {
+    font-size: 11px;
+  }
+  .copy span small a {
+    font-size: 11px;
+  }
+}
